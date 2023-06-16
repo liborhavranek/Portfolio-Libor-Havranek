@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+from flask_pretty import Prettify
 
 app = Flask(__name__)
+prettify = Prettify(app)
+
 
 @app.route("/")
 def hello_world():

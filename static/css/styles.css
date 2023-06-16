@@ -1,3 +1,8 @@
+/* --------------------------------- Main Section Start  ------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .top-menu {
 position: absolute;
   top: 0;
@@ -6,7 +11,6 @@ position: absolute;
   display: flex;
   justify-content: space-between;
   padding: 100px;
-
 }
 
 .top-menu a {
@@ -75,10 +79,6 @@ position: absolute;
     }
 }
 
-
-
-
-
 .bottom-icon {
   position: absolute;
   left: 50%;
@@ -101,8 +101,143 @@ position: absolute;
   }
 }
 
-
 .link-no-decoration {
   text-decoration: none;
   color:white;
+}
+
+/* --------------------------------- Second Section Start  ------------------------------------------------*/
+
+.second-section-text-right{
+      text-align: left;
+}
+
+.about-me-h{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
+
+.big-number{
+    font-size: 256px;
+}
+
+.p-second{
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    padding: 1%;
+}
+
+.p-smaller-text{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.text-center-second-section{
+      text-align: center;
+}
+
+.national-p{
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.names-p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+.about-me-h{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
+
+.p-second{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-smaller-text{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skok{
+padding 5%;
+}
+
+  .names-p {
+    margin-bottom: 20px; /* můžete nastavit hodnotu dle vašich potřeb */
+  }
+
+  .national-p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.names-p{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: opacity 2s, filter 2s, transform 2s;
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: opacity 1s, filter 1s, transform 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@keyframes breathing {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.breathing-animation {
+  animation-name: breathing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* --------------------------------- third Section Start  ------------------------------------------------*/
+
+
+.section-3{
+    background-color: #f8f9fa;
+}
+
+.certificate-image{
+    background-color: #f8f9fa;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 2s, filter 2s, transform 2s;
 }

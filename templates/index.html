@@ -50,7 +50,7 @@
 <section class="main-section">
   <div class="container-fluid">
     <div class="top-menu">
-      <a href="#">Profil</a>
+      <a href="#section2">Profil</a>
       <a href="#">Projekty</a>
       <a href="#">Programování</a>
       <a href="#">Kontakt</a>
@@ -72,34 +72,101 @@
 
   <section id="section2" class="section">
     <div class="container">
-      <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>v
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>v
-            <h2>Section 2</h2>
-      <p>This is the content of section 2.</p>
+ <h2 class="about-me-h hidden-left">Profil</h2>
+        <div class="row pb-5">
+            <div class="col-12 col-lg-8 second-section-text-right">
+
+                <p class="p-second hidden-left">
+                    Ahoj, jmenuji se <span class="border-bottom border-3 border-danger bold-text">Libor Havránek</span>
+                </p>
+
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - nadšenec do programování</p>
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - tvořím webové aplikace</p>
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - zaměřuje se na back-end</p>
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - Nejpoužívanější jazyk Python</p>
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - Nejpoužívanější Framework Flask</p>
+                <p class="p-smaller-text me-5 hidden-left ps-5 pb-1"> - Největší projekty ITShop a Fallout 4 web</p>
+
+
+            </div>
+
+            <div class="col-12 col-lg-4 skok">
+                <div class="text-center-second-section"><p class="big-number hidden-right breathing-animation">5</p></div>
+  <div class="text-center-second-section"><p class="p-smaller-text hidden-right">Dokončených projektů</p></div>
+</div>
+
+        </div>
+
+
+        <div class="row pb-5">
+            <div class="col-6 col-lg-3">
+                <p class="national-p hidden-left">Jméno:</p>
+                <p class="names-p hidden-left">Libor Havránek</p>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <p class="national-p hidden-left">Email:</p>
+                <p class="names-p hidden-left">liborhavranek91@gmail.com</p>
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+                <p class="national-p hidden-left">Datum narození:</p>
+                <p class="names-p hidden-left">20.11. 1991</p>
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+                <p class="national-p hidden-left">Bydliště:</p>
+                <p class="names-p hidden-left">České Budějovice</p>
+            </div>
+
+        </div>
 
     </div>
   </section>
 
-  <section class="section">
+
+  <section class="section section-3">
     <div class="container">
-      <h2>Section 3</h2>
+      <h2 class="about-me-h hidden">Certifikáty</h2>
+
+        <div class="row">
+
+            <div class="col-12 col-lg-8">
+                <img src="{{ url_for('static', filename='images/udemy.jpeg') }}" class="img-fluid certificate-image border border-dark border-2 rounded">
+            </div>
+
+            <div class="col-12 col-lg-4">
+
+                <p>ahoj</p>
+
+            </div>
+
+
+        </div>
+
+
+                <div class="row">
+
+                                <div class="col-12 col-lg-4">
+
+                <p>ahoj</p>
+
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <img src="{{ url_for('static', filename='images/coursera.jpeg') }}" class="img-fluid certificate-image border border-dark border-2 rounded">
+            </div>
+
+        </div>
+
+
+
       <p>This is the content of section 3.</p>
+              <h2>Section 3</h2>
+
+
     </div>
   </section>
 
@@ -119,6 +186,7 @@
   <!-- Bootstrap JS scripts (required for some features) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 </body>
 
 </html>
