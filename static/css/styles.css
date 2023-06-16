@@ -262,27 +262,47 @@ padding 5%;
       height: 100%;
 }
 
-.certificate-div {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+
+
+/* --------------------------------- four Section Start  ------------------------------------------------*/
+
+
+.skill-bar {
+  width: 80%;
+  height: 20px;
+  background-color: #C6C6C5;
+  position: relative;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
-.certificate-div:nth-child(1).show {
-    opacity: 1;
-    transition-delay: 0.5s;
+.bar {
+  width: 0%;
+  height: 100%;
+  background-color: #626FD0;
+  position: absolute;
+  transition: width 1s ease-in-out;
+  border-radius: 10px;
 }
 
-.certificate-div:nth-child(2).show {
-    opacity: 1;
-    transition-delay: 1s;
+.text-bar {
+  width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+      font-weight: bold;
 }
 
-.certificate-div:nth-child(3).show {
-    opacity: 1;
-    transition-delay: 1.5s;
+.start-text {
+  margin-right: auto;
 }
 
-.certificate-div:nth-child(4).show {
-    opacity: 1;
-    transition-delay: 2s;
+.end-text {
+  margin-left: auto;
 }

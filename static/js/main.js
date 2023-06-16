@@ -16,7 +16,6 @@ function typeWriterEffect1() {
     } else {
       // Call the "Junior" typing effect function
       typeWriterEffect3();
-
     }
   }
 
@@ -25,7 +24,6 @@ function typeWriterEffect1() {
 
 // Call the "Libor Havránek" typing effect function
 typeWriterEffect1();
-
 
 // JavaScript code for "Junior" typing effect
 const text2 = "Junior "; // Text to be typed
