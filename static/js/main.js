@@ -30,7 +30,7 @@ typeWriterEffect1();
 // JavaScript code for "Junior" typing effect
 const text2 = "Junior "; // Text to be typed
 const typingSpeed3 = 100; // Speed of typing (in milliseconds)
-const delayTime3 = 1000; // Time delay before typing starts (in milliseconds)
+const delayTime3 = 300; // Time delay before typing starts (in milliseconds)
 
 function typeWriterEffect3() {
   const element = document.getElementById("junior-typing");
@@ -53,7 +53,7 @@ function typeWriterEffect3() {
 
 // JavaScript code for repeating "Web developer" and "Web designer" typing effect
 const typingSpeed2 = 100; // Speed of typing (in milliseconds)
-const delayTime2 = 3000; // Time delay before typing starts (in milliseconds)
+const delayTime2 = 1000; // Time delay before typing starts (in milliseconds)
 const jobTitles = ["Web developer", "Software engineer", "Web designer"];
 let jobIndex = 0;
 
