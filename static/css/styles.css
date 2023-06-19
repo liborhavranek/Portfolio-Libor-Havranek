@@ -1,4 +1,8 @@
 /* --------------------------------- Main Section Start  ------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -120,12 +124,14 @@ position: absolute;
 
 .big-number{
     font-size: 256px;
+    color: #626FD0;
 }
 
 .p-second{
     font-size: 42px;
     font-family: 'Poppins', sans-serif;
     padding: 1%;
+
 }
 
 .p-smaller-text{
@@ -146,6 +152,7 @@ position: absolute;
     margin-bottom: 0;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    color: #626FD0;
 }
 
 .names-p{
@@ -165,6 +172,7 @@ position: absolute;
 .p-second{
     font-size: 32px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .p-smaller-text{
@@ -185,6 +193,7 @@ padding 5%;
     margin-bottom: 0;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+       color: #626FD0;
 }
 
 .names-p{
@@ -242,6 +251,7 @@ padding 5%;
     margin-bottom: 0;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+       color: #626FD0;
 }
 
 .certificate-p-text{
@@ -306,3 +316,67 @@ padding 5%;
 .end-text {
   margin-left: auto;
 }
+
+/* --------------------------------- four Section Start  ------------------------------------------------*/
+
+.section-5{
+    background-color: #f8f9fa;
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #626FD0 !important;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.card-text{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+.show-card {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.4);
+  transition: transform 1.5s;
+  z-index: 1;
+}
+
+.card-container:hover .card:not(:hover) {
+  flex: 0.6;
+  transition: flex 1.5s;
+}
+
+@media (max-width: 1200px) {
+  .card:hover {
+    transform: none;
+    transition: none;
+    z-index: auto;
+  }
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
+.left-button{
+    float: left;
+}
+
+.right-button{
+    float: right;
+}
+

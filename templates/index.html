@@ -60,7 +60,7 @@
       <div class="container-fluid">
         <div class="top-menu">
           <a href="#section2">Profil</a>
-          <a href="#">Projekty</a>
+          <a href="#section5">Projekty</a>
           <a href="#section4">Dovednosti</a>
           <a href="#">Kontakt</a>
         </div>
@@ -82,13 +82,13 @@
 
     <section id="section2" class="section">
       <div class="container">
+        ahoj
         <h2 class="about-me-h hidden-left">Profil</h2>
         <div class="row pb-5">
           <div class="col-12 col-lg-8 second-section-text-right">
             <p class="p-second hidden-left">
               Ahoj, jmenuji se
-              <span class="border-bottom border-3 border-danger bold-text"
-                >Libor Havránek</span
+              <span class="border-bottom border-3 border-danger bold-text">Libor Havránek</span
               >
             </p>
 
@@ -102,13 +102,13 @@
               - zaměřuje se na back-end
             </p>
             <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
-              - Nejpoužívanější jazyk Python
+              - nejpoužívanější jazyk Python
             </p>
             <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
-              - Nejpoužívanější Framework Flask
+              - nejpoužívanější Framework Flask
             </p>
             <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
-              - Největší projekty ITShop a Fallout 4 web
+              - největší projekty ITShop a Fallout 4 web
             </p>
           </div>
 
@@ -296,6 +296,81 @@
       </div>
     </section>
 
+    <section id="section5" class="section section-5">
+      <div class="container">
+        <h2 class="about-me-h hidden-left">Projekty</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="{{ url_for('static', filename='images/shop.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ITShop</h5>
+        <p class="card-text">Druhý větší projekt eshop s administrací a skladovým systémem, funkční mechanikou košíku a simulací platební brány a odílání objednávek.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/FlaskShop" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="http://ctiborekskutr3.pythonanywhere.com/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="{{ url_for('static', filename='images/fall.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fallout 4</h5>
+        <p class="card-text">Web o hře Fallou 4. Na webu se nachází interaktivní mapa hry. Web má funkce jako registrace přihlášení, psaní článků a komentářů, tvorba vlastního profilu. </p>
+      </div>
+        <div class="card-footer">
+        <a href="https://github.com/liborhavranek/FalloutPageFlask-stepbystep" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="http://ctiborekskutr.pythonanywhere.com/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="{{ url_for('static', filename='images/myweb.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Libor Havránek 2</h5>
+        <p class="card-text">Můj osobní web, který jsem si vytvořil, aby nahradil můj starý web. Na webu se popisuje, jaké mám zkušenosti a na jakých projektech jsem do této doby pracoval.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/Portfolio-Libor-Havranek" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="#" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+ <img src="{{ url_for('static', filename='images/editor.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Textový editor</h5>
+        <p class="card-text">Textový editor, který jsem naprogramoval abych se naučil tvořit aplikace pomocí TKinter. Editor má spoustu funkcí včetně funkce přehrávače hudby pro zlepšení práce.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/TextEditor" class="btn btn-dark"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="col offset-md-3 card-container">
+    <div class="card fade-in">
+   <img src="{{ url_for('static', filename='images/mywebone.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Libor Havránek</h5>
+        <p class="card-text">Můj starý osobní web, který jsem už nahradil mým novým webem. Na webu se popisuje, jaké mám zkušenosti a na jakých projektech jsem do této doby pracoval.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/Libor-Havranek-Portfolio_web-page" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://liborhavranek.github.io/Libor-Havranek-Portfolio_web-page/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <p>&copy; 2023 Your Website. All rights reserved.</p>
@@ -310,7 +385,7 @@
     ></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/certificate.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/card.js') }}"></script>
     <script src="{{ url_for('static', filename='js/image.js') }}"></script>
     <script src="{{ url_for('static', filename='js/skillbar.js') }}"></script>
   </body>
