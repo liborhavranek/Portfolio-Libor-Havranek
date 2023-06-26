@@ -1,0 +1,440 @@
+/* --------------------------------- Main Section Start  ------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.top-menu {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.top-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+    font-size: 48px;
+    color: white;
+}
+
+.top-menu a:hover {
+  color: lightyellow; /* Change the text color on hover */
+  text-shadow: 0 0 60px rgba(255, 255, 0, 0.5); /* Modify the shadow effect on hover */
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+.center-div {
+  display: inline-block;
+  padding: 2%;
+}
+
+.center-div {
+  border: none; /* Initially, set border to none */
+}
+
+.center-div.show-border {
+  border: 2px solid red; /* Add your desired border style here */
+}
+
+.text-center h1 {
+      font-size: 98px;
+      font-family: 'Roboto Mono', monospace;
+}
+
+.text-center p {
+      font-size: 48px;
+        display: inline;
+}
+
+.junior-typing{
+    color: red;
+}
+
+@media (max-width: 1200px) {
+  .top-menu {
+    padding: 20px;
+  }
+
+  .top-menu a {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+
+  .text-center h1 {
+    font-size: 48px;
+  }
+
+  .text-center p {
+      font-size: 24px;
+      display: inline;
+    }
+}
+
+.bottom-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.link-no-decoration {
+  text-decoration: none;
+  color:white;
+}
+
+/* --------------------------------- Second Section Start  ------------------------------------------------*/
+
+.second-section-text-right{
+      text-align: left;
+}
+
+.about-me-h{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
+
+.big-number{
+    font-size: 256px;
+    color: #626FD0;
+}
+
+.p-second{
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    padding: 1%;
+
+}
+
+.p-smaller-text{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.text-center-second-section{
+      text-align: center;
+}
+
+.national-p{
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #626FD0;
+}
+
+.names-p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+.about-me-h{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
+
+.p-second{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.p-smaller-text{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skok{
+padding 5%;
+}
+
+  .names-p {
+    margin-bottom: 20px; /* můžete nastavit hodnotu dle vašich potřeb */
+  }
+
+  .national-p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+       color: #626FD0;
+}
+
+.names-p{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: opacity 2s, filter 2s, transform 2s;
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: opacity 1s, filter 1s, transform 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@keyframes breathing {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.breathing-animation {
+  animation-name: breathing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* --------------------------------- third Section Start  ------------------------------------------------*/
+
+
+.section-3{
+    background-color: #f8f9fa;
+}
+
+.certificate-image{
+    background-color: #f8f9fa;
+}
+
+.certificate-p-head{
+        font-size: 32px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+       color: #626FD0;
+}
+
+.certificate-p-text{
+    font-size: 28px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.certificate-row{
+    display: flex;
+     align-items: stretch;
+}
+
+.certificate-pb-div{
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+      height: 100%;
+}
+
+
+
+/* --------------------------------- four Section Start  ------------------------------------------------*/
+
+
+.skill-bar {
+  width: 80%;
+  height: 20px;
+  background-color: #C6C6C5;
+  position: relative;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.bar {
+  width: 0%;
+  height: 100%;
+  background-color: #626FD0;
+  position: absolute;
+  transition: width 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.text-bar {
+  width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+      font-weight: bold;
+}
+
+.start-text {
+  margin-right: auto;
+}
+
+.end-text {
+  margin-left: auto;
+}
+
+/* --------------------------------- four Section Start  ------------------------------------------------*/
+
+.section-5{
+    background-color: #f8f9fa;
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #626FD0 !important;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.card-text{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+.show-card {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.4);
+  transition: transform 1.5s;
+  z-index: 1;
+}
+
+.card-container:hover .card:not(:hover) {
+  flex: 0.6;
+  transition: flex 1.5s;
+}
+
+@media (max-width: 1200px) {
+  .card:hover {
+    transform: none;
+    transition: none;
+    z-index: auto;
+  }
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
+.left-button{
+    float: left;
+}
+
+.right-button{
+    float: right;
+}
+
+/* --------------------------------- six Section Start  ------------------------------------------------*/
+
+
+.contact-icon{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-icons{
+    color: black;
+}
+
+.social-icons:hover{
+    color: #626FD0;
+}
+
+.email-div:hover,
+.phone-div:hover{
+    color: #626FD0;
+}
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group input, .form-group textarea {
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            padding-left: 0;
+            box-shadow: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            box-shadow: none;
+            border-color: #80bdff;
+        }
+
+        .form-group label {
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 5px;
+            transition: 0.2s ease all;
+        }
+
+        .form-group input:focus~label, .form-group textarea:focus~label,
+        .form-group input:valid~label, .form-group textarea:valid~label {
+            top: -20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+.form-div{
+    border-radius: 30px;
+    border: 3px solid #626FD0;
+}
+
