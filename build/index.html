@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/0182eb43ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;1,700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Website</title>
+    <style>
+      /* Custom styles */
+      .main-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(/static/images/city.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+        background-blend-mode: darken; /* Corrected property name */
+      }
+
+      .section {
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      @media (max-width: 767px) {
+        .main-section {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="main-section">
+      <div class="container-fluid">
+        <div class="top-menu">
+          <a href="#section2">Profil</a>
+          <a href="#section5">Projekty</a>
+          <a href="#section4">Dovednosti</a>
+          <a href="#">Kontakt</a>
+        </div>
+
+        <div class="text-center">
+          <div class="center-div">
+            <h1 id="typing-effect"></h1>
+            <p id="junior-typing" class="junior-typing"></p>
+            <p id="typing-effect-p"></p>
+          </div>
+        </div>
+        <div class="bottom-icon">
+          <a href="#section2" class="link-no-decoration">
+            <i class="fa-sharp fa-solid fa-angles-down fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="section">
+      <div class="container">
+        <h2 class="about-me-h hidden-left">Profil</h2>
+        <div class="row pb-5">
+          <div class="col-12 col-lg-8 second-section-text-right">
+            <p class="p-second hidden-left">
+              Ahoj, jmenuji se
+              <span class="border-bottom border-3 border-danger bold-text">Libor Havránek</span
+              >
+            </p>
+
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - nadšenec do programování
+            </p>
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - tvořím webové aplikace
+            </p>
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - zaměřuje se na back-end
+            </p>
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - nejpoužívanější jazyk Python
+            </p>
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - nejpoužívanější Framework Flask
+            </p>
+            <p class="p-smaller-text me-5 hidden-left ps-5 pb-1">
+              - největší projekty ITShop a Fallout 4 web
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-4 skok">
+            <div class="text-center-second-section">
+              <p class="big-number hidden-right breathing-animation">5</p>
+            </div>
+            <div class="text-center-second-section">
+              <p class="p-smaller-text hidden-right">Dokončených projektů</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col-6 col-lg-3">
+            <p class="national-p hidden-left">Jméno:</p>
+            <p class="names-p hidden-left">Libor Havránek</p>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="national-p hidden-left">Email:</p>
+            <p class="names-p hidden-left">liborhavranek91@gmail.com</p>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="national-p hidden-left">Datum narození:</p>
+            <p class="names-p hidden-left">20.11. 1991</p>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="national-p hidden-left">Bydliště:</p>
+            <p class="names-p hidden-left">České Budějovice</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--    <section class="section section-3">-->
+<!--      <div class="container">-->
+<!--        <h2 class="about-me-h hidden-left">Certifikáty</h2>-->
+
+<!--        <div class="row pb-5 certificate-row">-->
+<!--          <div class="col-12 col-lg-8">-->
+<!--            <img-->
+<!--              src="/static/images/udemy.jpeg"-->
+<!--              class="img-fluid certificate-image border border-dark border-2 rounded hidden-left"-->
+<!--            />-->
+<!--          </div>-->
+
+<!--          <div class="col-12 col-lg-4">-->
+<!--            <div class="pb-3 certificate-pb-div">-->
+<!--              <div class="certificate-div hidden-right">-->
+<!--                <p class="certificate-p-head">Lektor</p>-->
+<!--                <p class="certificate-p-text">Angela Yu</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-right">-->
+<!--                <p class="certificate-p-head">Kurz</p>-->
+<!--                <p class="certificate-p-text">100 Days of Code</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-right">-->
+<!--                <p class="certificate-p-head">Délka kurzu</p>-->
+<!--                <p class="certificate-p-text">64 hodin</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-right">-->
+<!--                <p class="certificate-p-head">Dokončeno</p>-->
+<!--                <p class="certificate-p-text">18. října 2022</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="row py-5 certificate-row">-->
+<!--          <div class="col-12 col-lg-4 order-2 order-lg-1">-->
+<!--            <div class="pb-3 certificate-pb-div">-->
+<!--              <div class="certificate-div hidden-left">-->
+<!--                <p class="certificate-p-head">Lektor</p>-->
+<!--                <p class="certificate-p-text">Charles Severance</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-left">-->
+<!--                <p class="certificate-p-head">Kurz</p>-->
+<!--                <p class="certificate-p-text">Python for Everybody</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-left">-->
+<!--                <p class="certificate-p-head">Délka kurzu</p>-->
+<!--                <p class="certificate-p-text">96 hodin</p>-->
+<!--              </div>-->
+<!--              <div class="certificate-div hidden-left">-->
+<!--                <p class="certificate-p-head">Dokončeno</p>-->
+<!--                <p class="certificate-p-text">8. dubna 2021</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-12 col-lg-8 order-1 order-lg-2">-->
+<!--            <img-->
+<!--              src="/static/images/coursera.jpeg"-->
+<!--              class="img-fluid certificate-image border border-dark border-2 rounded hidden-right"-->
+<!--            />-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <section id="section4" class="section">
+      <div class="container">
+        <h2 class="about-me-h hidden-left">Dovednosti</h2>
+
+        <div class="skill-complete-bar">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="text-bar">
+                <p class="start-text">HTML</p>
+                <p class="end-text">70 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="70"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">CSS</p>
+                <p class="end-text">65 %</p>
+              </div>
+              <div class="skill-bar">
+                <div class="bar" data-percent="65"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">Bootstrap</p>
+                <p class="end-text">60 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="60"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">jQuery</p>
+                <p class="end-text">55 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="55"></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="text-bar">
+                <p class="start-text">Python</p>
+                <p class="end-text">80 %</p>
+              </div>
+              <div class="skill-bar">
+                <div class="bar" data-percent="80"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">JavaScript</p>
+                <p class="end-text">60 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="60"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">MySQL</p>
+                <p class="end-text">55 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="55"></div>
+              </div>
+
+              <div class="text-bar">
+                <p class="start-text">Ajax</p>
+                <p class="end-text">50 %</p>
+              </div>
+
+              <div class="skill-bar">
+                <div class="bar" data-percent="50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section5" class="section section-5">
+      <div class="container">
+        <h2 class="about-me-h hidden-left">Projekty</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="/static/images/shop.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ITShop</h5>
+        <p class="card-text">Druhý větší projekt eshop s administrací a skladovým systémem, funkční mechanikou košíku a simulací platební brány a odílání objednávek.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/FlaskShop" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="http://ctiborekskutr3.pythonanywhere.com/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="/static/images/fall.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fallout 4</h5>
+        <p class="card-text">Web o hře Fallou 4. Na webu se nachází interaktivní mapa hry. Web má funkce jako registrace přihlášení, psaní článků a komentářů, tvorba vlastního profilu. </p>
+      </div>
+        <div class="card-footer">
+        <a href="https://github.com/liborhavranek/FalloutPageFlask-stepbystep" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="http://ctiborekskutr.pythonanywhere.com/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+       <img src="/static/images/myweb.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Libor Havránek 2</h5>
+        <p class="card-text">Můj osobní web, který jsem si vytvořil, aby nahradil můj starý web. Na webu se popisuje, jaké mám zkušenosti a na jakých projektech jsem do této doby pracoval.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/Portfolio-Libor-Havranek" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="#" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+  <div class="col card-container">
+    <div class="card fade-in">
+ <img src="/static/images/editor.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Textový editor</h5>
+        <p class="card-text">Textový editor, který jsem naprogramoval abych se naučil tvořit aplikace pomocí TKinter. Editor má spoustu funkcí včetně funkce přehrávače hudby pro zlepšení práce.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/TextEditor" class="btn btn-dark"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="col offset-md-3 card-container">
+    <div class="card fade-in">
+   <img src="/static/images/mywebone.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Libor Havránek</h5>
+        <p class="card-text">Můj starý osobní web, který jsem už nahradil mým novým webem. Na webu se popisuje, jaké mám zkušenosti a na jakých projektech jsem do této doby pracoval.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/liborhavranek/Libor-Havranek-Portfolio_web-page" class="btn btn-dark left-button ms-5"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://liborhavranek.github.io/Libor-Havranek-Portfolio_web-page/" class="btn btn-success right-button me-5"><i class="fa-solid fa-link"></i> Odkaz na web</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+
+        <section id="section6" class="section section-6">
+      <div class="container">
+        <h2 class="about-me-h hidden-left">Kontakt</h2>
+
+        <div class="row">
+
+          <div class="col-12 col-lg-6">
+            <div class="phone-div">
+            <p><i class="email-icon fa-solid fa-envelope fa-5x hidden-left"></i></p>
+            <p><i class="hidden-left contact-icon">liborhavranek91@gmail.com</i></p>
+            </div>
+
+            <div class="email-div">
+            <p class="pt-5"> <i class="phone-icon fa-solid fa-phone fa-5x hidden-left"></i></p>
+            <p><i class="hidden-left contact-icon">+420 605 026 890</i></p>
+            </div>
+
+            <div class="social-div pt-5">
+
+              <a href="https://github.com/liborhavranek"><i class="fa-brands fa-github fa-5x social-icons mx-5 hidden-left"></i></a>
+              <a href="https://www.facebook.com/libor.havranek.31"><i class="fa-brands fa-facebook fa-5x social-icons mx-5 hidden-left"></i></a>
+              <a href="https://twitter.com/LiborHavranek1"><i class="fa-brands fa-twitter fa-5x social-icons mx-5 hidden-left"></i></a>
+            </div>
+          </div>
+
+
+<div class="col-12 col-lg-6 form-div hidden-right">
+    <h2 class="contact-icon py-5">Kontaktní formulář</h2>
+    <form>
+        <div class="form-group pb-5">
+            <input type="text" class="form-control" id="name" required>
+            <label for="name">Jméno a příjmení</label>
+        </div>
+        <div class="form-group pb-5">
+            <input type="email" class="form-control" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="form-group pb-5">
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+            <label for="message">Zpráva</label>
+        </div>
+      <div class="pb-5">
+        <button type="submit" class="btn btn-primary ">Odeslat</button>
+        </div>
+    </form>
+</div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 made by Libor Havranek.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS scripts (required for some features) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/scroll.js"></script>
+    <script src="/static/js/card.js"></script>
+    <script src="/static/js/image.js"></script>
+    <script src="/static/js/skillbar.js"></script>
+  </body>
+</html>
