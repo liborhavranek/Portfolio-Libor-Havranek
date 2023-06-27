@@ -345,16 +345,6 @@ padding 5%;
   opacity: 1;
 }
 
-.card:hover {
-  transform: scale(1.4);
-  transition: transform 1.5s;
-  z-index: 1;
-}
-
-.card-container:hover .card:not(:hover) {
-  flex: 0.6;
-  transition: flex 1.5s;
-}
 
 @media (max-width: 1200px) {
   .card:hover {
