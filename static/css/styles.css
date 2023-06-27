@@ -391,40 +391,48 @@ padding 5%;
     color: #626FD0;
 }
 
-        .form-group {
-            position: relative;
-        }
+.form-group {
+    position: relative;
+}
 
-        .form-group input, .form-group textarea {
-            border: none;
-            border-bottom: 1px solid #ced4da;
-            border-radius: 0;
-            padding-left: 0;
-            box-shadow: none;
-        }
+.form-group input, .form-group textarea {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none;
+}
 
-        .form-group input:focus, .form-group textarea:focus {
-            box-shadow: none;
-            border-color: #80bdff;
-        }
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: none;
+    border-color: #80bdff;
+}
 
-        .form-group label {
-            position: absolute;
-            pointer-events: none;
-            left: 0;
-            top: 5px;
-            transition: 0.2s ease all;
-        }
+.form-group label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 5px;
+    transition: 0.2s ease all;
+}
 
-        .form-group input:focus~label, .form-group textarea:focus~label,
-        .form-group input:valid~label, .form-group textarea:valid~label {
-            top: -20px;
-            font-size: 14px;
-            color: #888;
-        }
+.form-group input:focus~label, .form-group textarea:focus~label,
+.form-group input:valid~label, .form-group textarea:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #888;
+}
 
 .form-div{
     border-radius: 30px;
     border: 3px solid #626FD0;
 }
 
+@media (max-width: 1200px) {
+    .contact-icon{
+        font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+
+}

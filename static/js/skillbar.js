@@ -9,42 +9,42 @@ function isInViewport(element) {
   );
 }
 
-function fillProgressBar() {
-  const progressBars = document.querySelectorAll(".bar");
+function fillProgressBar(progressBar) {
+  const progressBarWidth = progressBar.offsetWidth;
+  const progressBarPosition = progressBar.getBoundingClientRect().top;
+  const targetWidth = progressBar.getAttribute("data-percent");
+  const progressBarFilledClass = "filled";
 
-  progressBars.forEach((progressBar) => {
-    const progressBarWidth = progressBar.offsetWidth;
-    const progressBarPosition = progressBar.getBoundingClientRect().top;
-    const targetWidth = progressBar.getAttribute("data-percent");
-    const progressBarFilledClass = "filled";
+  if (!progressBar.classList.contains(progressBarFilledClass)) {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const scrollPercent =
+      (scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+      100;
 
-    if (isInViewport(progressBar)) {
-      if (!progressBar.classList.contains(progressBarFilledClass)) {
-        const scrollY = window.scrollY || window.pageYOffset;
-        const scrollPercent =
-          (scrollY /
-            (document.documentElement.scrollHeight - window.innerHeight)) *
-          100;
-
-        if (scrollPercent >= targetWidth) {
-          progressBar.style.width = targetWidth + "%";
-          progressBar.classList.add(progressBarFilledClass);
-        } else {
-          progressBar.style.width = "0%";
-          progressBar.classList.remove(progressBarFilledClass);
-
-          setTimeout(() => {
-            progressBar.style.width = targetWidth + "%";
-            progressBar.classList.add(progressBarFilledClass);
-          }, 100);
-        }
-      }
+    if (scrollPercent >= targetWidth) {
+      progressBar.style.width = targetWidth + "%";
+      progressBar.classList.add(progressBarFilledClass);
     } else {
       progressBar.style.width = "0%";
       progressBar.classList.remove(progressBarFilledClass);
+
+      setTimeout(() => {
+        progressBar.style.width = targetWidth + "%";
+        progressBar.classList.add(progressBarFilledClass);
+      }, 100);
+    }
+  }
+}
+
+function handleScroll() {
+  const progressBars = document.querySelectorAll(".bar");
+
+  progressBars.forEach((progressBar) => {
+    if (isInViewport(progressBar)) {
+      fillProgressBar(progressBar);
     }
   });
 }
 
-window.addEventListener("scroll", fillProgressBar);
-window.addEventListener("resize", fillProgressBar);
+window.addEventListener("scroll", handleScroll);
